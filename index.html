@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오송고등학교 정보</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>오송고등학교 정보</h1>
+      <nav aria-label="주요 메뉴">
+        <a href="#meal">오늘의 급식</a>
+        <a href="#schedule">학사일정</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <p class="eyebrow">OSONG HIGH SCHOOL</p>
+      <h2>오송고등학교에 오신 것을 환영합니다!</h2>
+      <p>오늘의 급식과 주요 학사일정을 확인해 보세요.</p>
+      <p id="today" class="today"></p>
+    </section>
+
+    <section id="meal" class="section">
+      <h2>오늘의 급식</h2>
+      <div id="meal-content" class="panel" aria-live="polite">급식 정보를 불러오는 중입니다...</div>
+    </section>
+
+    <section id="schedule" class="section">
+      <h2>학사일정</h2>
+      <p class="section-description">오늘부터 약 3개월 동안의 학사일정입니다.</p>
+      <div id="schedule-list" class="schedule-list" aria-live="polite">학사일정을 불러오는 중입니다...</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>오송고등학교 정보 페이지</p>
+      <p class="footer-note">학교 공식 홈페이지가 아닌 정보 안내용 페이지입니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
